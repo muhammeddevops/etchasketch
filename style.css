@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    border: 15px solid rgb(150, 142, 142);
+    border-radius: 14px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Exo;
+    background: linear-gradient(#f3f1f1, #b8b5b5);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+.title, .mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.edit, .buttons, .error {
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animate-character {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #c7c360 0%,
+    #70b683 29%,
+    #db4879 67%,
+    #c7c360 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+  font-size: 45px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+button {
+    padding: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: cornsilk;
+    border-radius: 4px;
+    font-family: exo;
+    border: 2px solid rgb(71, 69, 69);
+    cursor: pointer;
+}
+
+input {
+    width: 25px;
+    border: 2px solid rgb(71, 69, 69);
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.blackButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+.grayButton:hover {
+    background-color: rgb(95, 95, 95);
+    color: white;
+  }
+
+  .randomButton:hover {
+    background: linear-gradient(0.25turn, #20ff02, #ebf8e1, #aecc03);
+  }
+
+
+.mode {
+    margin-bottom: 5px;
+  }
+
+.error {
+    display: none;
+  }  
+  
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-family: monospace;
+    font-size: 13px;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
